@@ -1,0 +1,30 @@
+.navbar{
+  position: fixed;
+}
+.navbar-container {
+  width: 100vw;
+  height: 9.81vh;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+.navbar-employee-payroll {
+  margin-left: 0.5rem;
+  color: #82A70C;
+  font: normal normal bold 16px/19px Montserrat;
+}
+.navbar-brPayroll {
+  color: #42515F;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #F7F7F7;
+}
