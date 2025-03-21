@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import NavBar from '../NavBar/NavBar'
-export class Dashboard extends Component {
+import {Outlet} from 'react-router-dom';
+export class HomePage extends Component {
   render() {
     return (
       <div>
         <NavBar />
+        <Outlet/>
       </div>
     )
   }
 }
 
-export default Dashboard
+export default HomePage
