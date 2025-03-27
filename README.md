@@ -1,0 +1,1 @@
+I have created an employee form with various fields like Name, Department, Salary, etc. On submitting the form, the details get updated on the dashboard, where we can also edit and delete them. Additionally, SSO login has been implemented# React_EmployeePayroll_1443_TanyaMehta
