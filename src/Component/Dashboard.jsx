@@ -241,7 +241,7 @@ class Dashboard extends Component {
 }
 
 Dashboard.propTypes = {
-  navigate: PropTypes.func.isRequired, // Ensure `navigate` is a required function prop
+  navigate: PropTypes.func.isRequired, 
 };
 
 
