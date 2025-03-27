@@ -1,0 +1,16 @@
+{
+  "EmpList": [
+    {
+      "id": "e0e3",
+      "name": "mjghfnhf",
+      "profileImage": "/Assets/person3.jpeg",
+      "gender": "male",
+      "departments": [
+        "sales"
+      ],
+      "salary": "₹30,000",
+      "startDate": "15-09-2021",
+      "notes": "sbjQH"
+    }
+  ]
+}
