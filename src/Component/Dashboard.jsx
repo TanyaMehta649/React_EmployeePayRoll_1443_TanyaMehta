@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
-import { Search, Plus, Trash2, Pencil } from 'lucide-react'
+import { Search, Plus} from 'lucide-react'
 import PropTypes from 'prop-types';
+import { FaEdit, FaTrash } from "react-icons/fa";
 
 const withNavigate = (Component) => {
   return (props) => {
@@ -87,7 +88,7 @@ class Dashboard extends Component {
       <div className="min-h-screen bg-gray-50 font-sans">
         <Header />
 
-        <div className="max-w-6xl mx-auto my-5 p-5  border border-gray-100 rounded-lg">
+        <div className="max-w-6xl mx-auto my-5 p-5  ">
           <div className="flex flex-col md:flex-row justify-between items-center mb-5 space-y-4 md:space-y-0">
             <h1 className="text-2xl font-normal text-gray-700">Employee Details</h1>
             <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
@@ -116,17 +117,17 @@ class Dashboard extends Component {
 
           <div className="mt-2.5 overflow-x-auto">
             <div className="min-w-[768px]">
-              <table className="w-full border-collapse">
+              <table className="w-full border border-gray-300 border-collapse">
                 <thead>
-                  <tr className="bg-gray-700 text-white font-normal">
+                  <tr className="bg-gray-700 text-white font-normal border-[2px] border-gray-500 ">
                     <th className="p-4"></th>
-                    <th className="text-left p-3">NAME</th>
+                    <th className="text-left p-3 ">NAME</th>
 
-                    <th className="p-3 text-left">GENDER</th>
-                    <th className="p-3 text-left">DEPARTMENT</th>
-                    <th className="p-3 text-left">SALARY</th>
-                    <th className="p-3 text-left">START DATE</th>
-                    <th className="p-3 text-left">ACTIONS</th>
+                    <th className="p-3 text-left ">GENDER</th>
+                    <th className="p-3 text-left ">DEPARTMENT</th>
+                    <th className="p-3 text-left ">SALARY</th>
+                    <th className="p-3 text-left ">START DATE</th>
+                    <th className="p-3 text-left ">ACTIONS</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -151,10 +152,8 @@ class Dashboard extends Component {
                   }
                   {
                     !loading && !error && filteredEmployees.length > 0 && filteredEmployees.map((employee, index) => (
-                      <tr
-                        key={employee.id}
-                        className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}
-                      >
+                      <tr key={employee.id} className="bg-white border-b border-gray-300">
+
                         <td className="p-3">
                           <img
                             src={employee.profileImage}
@@ -184,14 +183,14 @@ class Dashboard extends Component {
                               onClick={() => this.handleEdit(employee)}
                               aria-label="Edit employee"
                             >
-                              <Pencil />
+                              <FaEdit size={18} />
                             </button>
                             <button
                               className="text-[#9CA3AF] hover:text-red-600 cursor-pointer"
                               onClick={() => this.handleDelete(employee.id)}
                               aria-label="Delete employee"
                             >
-                              <Trash2 aria-label={"Delete"} />
+                             <FaTrash size={18} />
                             </button>
                           </div>
                         </td>

@@ -11,6 +11,18 @@
       "salary": "₹30,000",
       "startDate": "15-09-2021",
       "notes": "sbjQH"
+    },
+    {
+      "id": "a442",
+      "name": "tanya",
+      "profileImage": "/Assets/person1.jpeg",
+      "gender": "male",
+      "departments": [
+        "HR"
+      ],
+      "salary": "₹30,000",
+      "startDate": "09-09-2023",
+      "notes": "jhj"
     }
   ]
 }
